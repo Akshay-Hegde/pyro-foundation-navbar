@@ -146,7 +146,6 @@ class Plugin_Navbar extends Plugin
     static $active = array(); // we'll mark each item in the active tree
 
     $divider      = $this->attribute('divider', 1);
-    var_dump($divider);
     $output         = $return_arr ? array() : '';
     $max_depth      = $this->attribute('max_depth', 2);
     $i              = 1;
