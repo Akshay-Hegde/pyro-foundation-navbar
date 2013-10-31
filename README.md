@@ -13,7 +13,7 @@ Drop the `navbar.php` file into your `addons/shared_addons/plugins/` directory. 
 <nav id="header-nav" class="top-bar" role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="{{ base_url }}" class="navbar-brand">Maggio</a></h1>
+      <h1><a href="{{ base_url }}" class="navbar-brand">{{ settings:site_name }}</a></h1>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
