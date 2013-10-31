@@ -62,8 +62,8 @@ class Plugin_Navbar extends Plugin
           ),
           'divider' => array(
             'type' => 'flag',
-            'flags' => 'Y|N',
-            'default' => 'Y',
+            'flags' => '1|0',
+            'default' => '1',
             'required' => false,
           ),
           'max_depth' => array(
@@ -145,7 +145,8 @@ class Plugin_Navbar extends Plugin
     static $current_link = false;
     static $active = array(); // we'll mark each item in the active tree
 
-    $divider      = $this->attribute('divider', true);
+    $divider      = $this->attribute('divider', 1);
+    var_dump($divider);
     $output         = $return_arr ? array() : '';
     $max_depth      = $this->attribute('max_depth', 2);
     $i              = 1;
