@@ -4,6 +4,8 @@ PyroCMS Foundation 4 Navigation
 ## Introduction
 This is a plugin to output the PyroCMS menu using markup friendly to Foundation 4. For simplicity, most options of the original plugin have been removed. It supports an abritary depth of submenus.
 
+Suggestions and improvements are welcome.
+
 ## Usage
 Drop the `navbar.php` file into your `addons/shared_addons/plugins/` directory. Use `navbar:left` or `navbar:right` to enclose the links in a `ul.left` or `ul.right`. Use `navbar:links` to get just the li's.
 
