@@ -182,7 +182,7 @@ class Plugin_Navbar extends Plugin
         );
 
       } else {
-        $output .= ($divider && $level == 1 ? '<li class="divider"></li>' : '') // only show divider on top level
+        $output .= ($divider && $level == 1 && $k > 0 ? '<li class="divider"></li>' : '') // only show divider on top level
                 . '<li' . ($classes ? ' class="'.implode(' ', $classes).'"' : '') .'>'
                   . '<a href="' . $link['url'] . '">' . $link['title'] . '</a>'
                   . ($children ? '<ul class="dropdown">' . $children . '</ul>' : '')
