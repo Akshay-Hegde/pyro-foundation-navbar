@@ -169,6 +169,8 @@ class Plugin_Navbar extends Plugin
         $classes[] = 'has-dropdown';
       if(isset($active[$level]) && $active[$level] == $link['id'])
         $classes[] = 'active';
+      if(!$k)
+        $classes[] = 'first';
 
       if($return_arr) {
         $output[$k] = array(
